@@ -16,58 +16,59 @@ export default {
 <template>
     <footer>
         <div class="upper">
-            <div class="col">
-                <h3>DC COMICS</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
-                </nav>
-                <h3>Shop</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
-                </nav>
+            <div class="nav-bar">
+                <div class="col">
+                    <h3>DC COMICS</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                        </ul>
+                    </nav>
+                    <h3>Shop</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col">
+                    <h3>DC</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col">
+                    <h3>SITES</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="col">
-                <h3>DC</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col">
-                <h3>SITES</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
-                </nav>
-            </div>
-
             <img :src="createImagePath(imgName)" :alt="imgName">
         </div>
         <div class="bottom">
@@ -83,6 +84,10 @@ footer .upper {
     background-image: url("../assets/img/footer-bg.jpg");
     display: flex;
     justify-content: space-between;
+}
+
+footer .nav-bar {
+    display: flex;
 }
 
 footer .bottom {

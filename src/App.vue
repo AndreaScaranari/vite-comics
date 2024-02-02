@@ -18,4 +18,9 @@ body {
 a {
   text-decoration: none;
 }
+
+li {
+  list-style-type: none;
+  list-style-position: outside;
+}
 </style>
