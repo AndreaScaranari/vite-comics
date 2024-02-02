@@ -21,6 +21,9 @@ a {
 
 li {
   list-style-type: none;
-  list-style-position: outside;
+}
+
+ul {
+  padding: 0;
 }
 </style>

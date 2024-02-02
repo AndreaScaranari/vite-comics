@@ -57,7 +57,6 @@ header a {
     color: #303030;
     line-height: 116px;
     border-bottom: 4px solid transparent;
-
 }
 
 header a:hover {
