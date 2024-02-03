@@ -21,73 +21,77 @@ export default {
 <template>
     <footer>
         <div class="upper">
-            <div class="nav-bar">
-                <div class="col">
-                    <h3>DC COMICS</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                        </ul>
-                    </nav>
-                    <h3>Shop</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                        </ul>
-                    </nav>
+            <div class="container">
+                <div class="nav-bar">
+                    <div class="col">
+                        <h3>DC COMICS</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                            </ul>
+                        </nav>
+                        <h3>Shop</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h3>DC</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h3>SITES</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="col">
-                    <h3>DC</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col">
-                    <h3>SITES</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <img :src="createImagePath(imgName)" :alt="imgName">
             </div>
-            <img :src="createImagePath(imgName)" :alt="imgName">
         </div>
 
         <div class="bottom">
-            <a class="button" href="">SIGN-UP NOW!</a>
-            <div class="social">
-                <H3>FOLLOW US</H3>
-                <nav class="social-icons">
-                    <li><a href="#"><img :src="createImagePath(fbLogo)" :alt="fbLogo"></a></li>
-                    <li><a href="#"><img :src="createImagePath(twLogo)" :alt="twLogo"></a></li>
-                    <li><a href="#"><img :src="createImagePath(ytLogo)" :alt="ytLogo"></a></li>
-                    <li><a href="#"><img :src="createImagePath(piLogo)" :alt="piLogo"></a></li>
-                    <li><a href="#"><img :src="createImagePath(peLogo)" :alt="peLogo"></a></li>
-                </nav>
+            <div class="container">
+                <a class="button" href="">SIGN-UP NOW!</a>
+                <div class="social">
+                    <H3>FOLLOW US</H3>
+                    <nav class="social-icons">
+                        <li><a href="#"><img :src="createImagePath(fbLogo)" :alt="fbLogo"></a></li>
+                        <li><a href="#"><img :src="createImagePath(twLogo)" :alt="twLogo"></a></li>
+                        <li><a href="#"><img :src="createImagePath(ytLogo)" :alt="ytLogo"></a></li>
+                        <li><a href="#"><img :src="createImagePath(piLogo)" :alt="piLogo"></a></li>
+                        <li><a href="#"><img :src="createImagePath(peLogo)" :alt="peLogo"></a></li>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>
@@ -97,17 +101,27 @@ export default {
 footer .upper {
     height: 400px;
     background-image: url("../assets/img/footer-bg.jpg");
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
 }
 
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 footer h3 {
     color: white;
+    padding: 1rem 0;
 }
 
 footer .nav-bar {
     display: flex;
+    align-self: flex-start;
+    margin-top: 1rem;
 }
 
 .upper a {
@@ -132,21 +146,19 @@ footer .bottom {
 }
 
 .bottom h3 {
-    margin: 0;
     color: #0282F9;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 footer .social {
     display: flex;
     align-items: center;
-
 }
 
 footer .social-icons {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 1rem;
 }
 
 .bottom .button {

@@ -1,7 +1,17 @@
-<script setup>
-import AppHeader from "./components/AppHeader.vue"
-import AppMain from "./components/AppMain.vue"
-import AppFooter from "./components/AppFooter.vue"
+<script>
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
+
+export default {
+  name: "DC-Comics",
+  components: {
+    AppHeader,
+    AppMain,
+    AppFooter
+  }
+}
+
 </script>
 
 <template>
@@ -11,8 +21,15 @@ import AppFooter from "./components/AppFooter.vue"
 </template>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: black;
+  background-color: #1C1C1C;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -23,7 +40,9 @@ li {
   list-style-type: none;
 }
 
-ul {
-  padding: 0;
+.container {
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
 }
 </style>

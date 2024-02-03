@@ -6,7 +6,9 @@ export default {
 
 <template>
     <main>
-        <h1>Content goes here</h1>
+        <div class="container">
+            <h1>Content goes here</h1>
+        </div>
     </main>
 </template>
 
@@ -14,12 +16,10 @@ export default {
 main {
     height: 120px;
     color: white;
-    line-height: 100%;
 }
 
 h1 {
     line-height: 100%;
-    margin: auto 0;
     line-height: 120px;
 }
 </style>
