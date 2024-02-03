@@ -3,7 +3,7 @@ export default {
     name: "AppFooter",
     data: () => ({
         imgName: "dc-logo-bg.png",
-        logos: ["footer-facebook.png", "footer-periscope.png", "footer-pinterest.png", "footer-twitter.png", "footer-youtube.png"],
+        logos: ["footer-facebook.png", "footer-twitter.png", "footer-youtube.png", "footer-pinterest.png", "footer-periscope.png"],
         comicsDCLinks: [
             {
                 text: 'Characters',
