@@ -3,11 +3,123 @@ export default {
     name: "AppFooter",
     data: () => ({
         imgName: "dc-logo-bg.png",
-        fbLogo: "footer-facebook.png",
-        peLogo: "footer-periscope.png",
-        piLogo: "footer-pinterest.png",
-        twLogo: "footer-twitter.png",
-        ytLogo: "footer-youtube.png"
+        logos: ["footer-facebook.png", "footer-periscope.png", "footer-pinterest.png", "footer-twitter.png", "footer-youtube.png"],
+        comicsDCLinks: [
+            {
+                text: 'Characters',
+                url: '#',
+            },
+            {
+                text: 'Comics',
+                url: '#',
+            },
+            {
+                text: 'Movies',
+                url: '#',
+            },
+            {
+                text: 'TV',
+                url: '#',
+            },
+            {
+                text: 'Games',
+                url: '#',
+            },
+            {
+                text: 'Collectibles',
+                url: '#',
+            },
+            {
+                text: 'Videos',
+                url: '#',
+            },
+            {
+                text: 'Fans',
+                url: '#',
+            },
+            {
+                text: 'News',
+                url: '#',
+            }
+        ],
+        shopLinks: [
+            {
+                text: 'Shop DC',
+                url: '#',
+            },
+            {
+                text: 'Shop DC Collectibles',
+                url: '#',
+            },
+        ],
+        dcLinks: [
+            {
+                text: 'Terms Of Use',
+                url: '#',
+            },
+            {
+                text: 'Privacy policy (New)',
+                url: '#',
+            },
+            {
+                text: 'Ad Choices',
+                url: '#',
+            },
+            {
+                text: 'Advertising',
+                url: '#',
+            },
+            {
+                text: 'Jobs',
+                url: '#',
+            },
+            {
+                text: 'Subscriptions',
+                url: '#',
+            },
+            {
+                text: 'Talent Workshops',
+                url: '#',
+            },
+            {
+                text: 'CPSC Certificates',
+                url: '#',
+            },
+            {
+                text: 'Ratings',
+                url: '#',
+            },
+            {
+                text: 'Shop Help',
+                url: '#',
+            },
+            {
+                text: 'Contact Us',
+                url: '#',
+            },
+        ],
+        sitesLinks: [
+            {
+                text: 'DC',
+                url: '#',
+            },
+            {
+                text: 'MAD Magazine',
+                url: '#',
+            },
+            {
+                text: 'DC Kids',
+                url: '#',
+            },
+            {
+                text: 'DC Universe',
+                url: '#',
+            },
+            {
+                text: 'DC Power Visa',
+                url: '#',
+            },
+        ],
     }),
     methods: {
         createImagePath(imgName) {
@@ -27,20 +139,13 @@ export default {
                         <h3>DC COMICS</h3>
                         <nav>
                             <ul>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li v-for="(li, i) in comicsDCLinks" :key="i"><a :href="li.url">{{ li.text }}</a></li>
                             </ul>
                         </nav>
                         <h3>Shop</h3>
                         <nav>
                             <ul>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li v-for="(li, i) in shopLinks" :key="i"><a :href="li.url">{{ li.text }}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -48,17 +153,7 @@ export default {
                         <h3>DC</h3>
                         <nav>
                             <ul>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li v-for="(li, i) in dcLinks" :key="i"><a :href="li.url">{{ li.text }}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -66,11 +161,7 @@ export default {
                         <h3>SITES</h3>
                         <nav>
                             <ul>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li v-for="(li, i) in sitesLinks" :key="i"><a :href="li.url">{{ li.text }}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -85,11 +176,8 @@ export default {
                 <div class="social">
                     <H3>FOLLOW US</H3>
                     <nav class="social-icons">
-                        <li><a href="#"><img :src="createImagePath(fbLogo)" :alt="fbLogo"></a></li>
-                        <li><a href="#"><img :src="createImagePath(twLogo)" :alt="twLogo"></a></li>
-                        <li><a href="#"><img :src="createImagePath(ytLogo)" :alt="ytLogo"></a></li>
-                        <li><a href="#"><img :src="createImagePath(piLogo)" :alt="piLogo"></a></li>
-                        <li><a href="#"><img :src="createImagePath(peLogo)" :alt="peLogo"></a></li>
+                        <li v-for="(logo, i) in logos" :key="i"><a href="#"><img :src="createImagePath(logo)"
+                                    :alt="logo"></a></li>
                     </nav>
                 </div>
             </div>
@@ -126,6 +214,8 @@ footer .nav-bar {
 
 .upper a {
     color: #797979;
+    font-size: small;
+    font-weight: 500;
 }
 
 footer .col {
