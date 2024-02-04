@@ -12,7 +12,7 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
     height: 120px;
     color: white;

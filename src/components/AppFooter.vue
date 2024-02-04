@@ -185,75 +185,73 @@ export default {
     </footer>
 </template>
 
-<style scoped>
-footer .upper {
-    height: 400px;
-    background-image: url("../assets/img/footer-bg.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-}
+<style lang="scss" scoped>
+@use "@/scss/variables" as *;
 
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+footer {
+    .upper {
+        height: 400px;
+        background-image: url("../assets/img/footer-bg.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
 
-footer h3 {
-    color: white;
-    padding: 1rem 0;
-}
+    h3 {
+        color: white;
+        padding: 1rem 0;
+    }
 
-footer .nav-bar {
-    display: flex;
-    align-self: flex-start;
-    margin-top: 1rem;
-}
+    .nav-bar {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
 
-.upper a {
-    color: #797979;
-    font-size: small;
-    font-weight: 500;
-}
+    footer .col {
+        width: 140px;
+    }
 
-footer .col {
-    width: 140px;
-}
+    img {
+        height: 150%;
+        align-self: center;
+    }
 
-footer img {
-    height: 150%;
-    align-self: center;
-}
+    .upper a {
+        color: #797979;
+        font-size: small;
+        font-weight: 500;
+    }
 
-footer .bottom {
-    height: 120px;
-    background-color: #303030;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .bottom {
+        height: 120px;
+        background-color: #303030;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-.bottom h3 {
-    color: #0282F9;
-    padding-right: 2rem;
-}
+        h3 {
+            color: $blue;
+            padding-right: 2rem;
+        }
 
-footer .social {
-    display: flex;
-    align-items: center;
-}
+        .button {
+            color: white;
+            border: 2px solid $blue;
+            padding: 1rem;
+        }
+    }
 
-footer .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
+    .social {
+        display: flex;
+        align-items: center;
+    }
 
-.bottom .button {
-    color: white;
-    border: 2px solid #0282F9;
-    padding: 1rem;
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 </style>

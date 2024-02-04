@@ -77,46 +77,42 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "@/scss/variables" as *;
+
 header {
     height: 120px;
     background-color: white;
     margin-top: 1rem;
-}
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    img {
+        max-height: 70%;
+    }
 
-header img {
-    max-height: 70%;
-}
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
 
-header ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
+    a {
+        display: block;
+        padding: 0 1rem;
+        color: #303030;
+        line-height: 116px;
+        border-bottom: 4px solid transparent;
+        font-size: small;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
-header a {
-    display: block;
-    padding: 0 1rem;
-    color: #303030;
-    line-height: 116px;
-    border-bottom: 4px solid transparent;
-    font-size: small;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+    a:hover {
+        color: $blue;
+    }
 
-header a:hover {
-    color: #0282F9;
-}
-
-.active {
-    color: #0282F9;
-    border-bottom: 4px solid #0282F9;
+    .active {
+        color: $blue;
+        border-bottom: 4px solid $blue;
+    }
 }
 </style>
