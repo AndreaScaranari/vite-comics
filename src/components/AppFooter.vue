@@ -209,7 +209,7 @@ footer {
         margin-top: 1rem;
     }
 
-    footer .col {
+    .col {
         width: 140px;
     }
 
