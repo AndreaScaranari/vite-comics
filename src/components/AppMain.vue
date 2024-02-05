@@ -1,6 +1,9 @@
 <script>
+import AppBluestripe from "@/components/AppBluestripe.vue";
+
 export default {
-    name: "AppMain"
+    name: "AppMain",
+    components: { AppBluestripe }
 }
 </script>
 
@@ -9,17 +12,16 @@ export default {
         <div class="container">
             <h1>Content goes here</h1>
         </div>
+        <AppBluestripe />
     </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-    height: 120px;
     color: white;
-}
 
-h1 {
-    line-height: 100%;
-    line-height: 120px;
+    .container {
+        height: 120px;
+    }
 }
 </style>
