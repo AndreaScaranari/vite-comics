@@ -1,10 +1,11 @@
 <script>
 import AppBluestripe from "@/components/AppBluestripe.vue";
 import AppCard from "@/components/AppCard.vue";
+import AppJumbotron from "@/components/AppJumbotron.vue";
 
 export default {
     name: "AppMain",
-    components: { AppBluestripe, AppCard },
+    components: { AppBluestripe, AppCard, AppJumbotron },
     props: {
         dcComics: Array,
     }
@@ -13,6 +14,7 @@ export default {
 
 <template>
     <main>
+        <AppJumbotron />
         <div class="container">
             <p>CURRENT SERIES</p>
             <div class="row">
