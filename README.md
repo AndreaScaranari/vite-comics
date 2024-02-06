@@ -1,4 +1,4 @@
-# Esercizio di oggi: Vite DC Comics
+# Esercizio di oggi: Vite DC Comics (DAY 1)
 ### Nome repo: vite-comics
 
 ### Descrizione
@@ -15,3 +15,14 @@ PS: I font utilizzati sono Open Sans e Open Sans Condensed
 ### Bonus
 - Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 - Importare il font utilizzando Fontsource
+
+## (DAY 2)
+
+### Descrizione
+Continuate a lavorare nella stessa repo di ieri e create un nuovo componente che rappresenterà le card dei fumetti.<br>
+Utilizzate i dati presenti nel file che trovate in allegato e passateli al componente Card tramite props.<br>
+Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli con Sass.<br>
+
+### Possibili Bonus:
+- Aggiungere il jumbotron
+- Organizzare i dati creando un barrel da importare in App.vue
